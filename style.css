@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(webb.png);
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 400px;
+  height: 500px;
+  border-radius: 5px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+}
+
+.container #newTodo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.container #newTask {
+  height: 35px;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#add {
+  width: 7vw;
+  border: none;
+  border-radius: 3px;
+  background-color: #7f52eb;
+  color: #fff;
+  cursor: pointer;
+}
+
+#add:hover {
+  opacity: 0.9;
+}
+
+#list {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.listItems {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-top: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  user-select: none;
+}
+
+.close {
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  background: transparent;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.clear {
+  width: 5vw;
+  height: 5vh;
+  border: none;
+  border-radius: 3px;
+  background-color: #7f52eb;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.clear:hover {
+  opacity: 0.9;
+}
